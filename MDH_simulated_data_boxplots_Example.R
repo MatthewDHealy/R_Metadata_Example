@@ -153,6 +153,11 @@ stripchart(e, vertical=TRUE, add=TRUE, method="stack", col='blue', pch="o")
 
 summary(e)
 
+# Make histograms
+
+hist(as.numeric(e$vehicle))
+hist(as.numeric(e$drug_a))
+hist(as.numeric(e$drug_b))
 
 
 # Close the PDF file of plots
