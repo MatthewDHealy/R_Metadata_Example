@@ -208,6 +208,11 @@ Type 'q()' to quit R.
  Max.   :21.968   Max.   :1237.00   Max.   :150.531  
                   NA's   :59        NA's   :67       
 > 
+> # Make histograms
+> 
+> hist(as.numeric(e$vehicle))
+> hist(as.numeric(e$drug_a))
+> hist(as.numeric(e$drug_b))
 > 
 > 
 > # Close the PDF file of plots
