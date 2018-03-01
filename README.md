@@ -8,13 +8,16 @@ Here's a simple example in R of how I handle the common situation when I have tw
 
 3. Extracting groups for boxplot purposes when, as is often the case, we have a different number of samples for each treatment (so the simplest way of setting up the data for boxplot purposes won't work).
 
-I was going to upload these files to github, but for some reason I cannot access the github server right now!  So I've uploaded a zipfile to Google Drive.
 
 Contents are:
 ````2018_03_01_12_12_24BoxPlotExampleCD274.pdf```` output plot
+
 ````MDH_simulated_data.txt```` SIMULATED data
+
 ````MDH_simulated_data_boxplots_Example.R```` code
+
 ````MDH_simulated_data_boxplots_Example_output.txt```` text output
+
 ````MDH_simulated_samples.txt```` MADE-UP samples
 
 ### These data are not real.  I made them up out of whole cloth for this example. When I figured out how to do this, I was working with Confidential data, so I made something from scratch that I can share.
