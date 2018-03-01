@@ -134,6 +134,27 @@ summary(ForBoxPlot[ForBoxPlot$group=="vehicle",])
 summary(ForBoxPlot[ForBoxPlot$group=="drug A",])
 summary(ForBoxPlot[ForBoxPlot$group=="drug B",])
 
+# now let's make a box plot with individual points
+# overlaid.  This requires a slightly different organization
+# of the data
+
+a <- as.numeric(Veh$value)
+b <- c(as.numeric(DrugA$value) , rep(NA, nrow(Veh) - nrow(DrugA)))
+c <- c(as.numeric(DrugB$value) , rep(NA, nrow(Veh) - nrow(DrugB)))
+
+e <- data.frame(
+        vehicle=a,
+        drug_a =b,
+        drug_b =c
+                )
+
+boxplot(e)
+stripchart(e, vertical=TRUE, add=TRUE, method="stack", col='blue', pch="o")
+
+summary(e)
+
+
+
 # Close the PDF file of plots
 dev.off()
 

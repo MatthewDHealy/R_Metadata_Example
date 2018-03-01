@@ -181,6 +181,35 @@ Type 'q()' to quit R.
               3rd Qu.: 69.783  
               Max.   :150.531  
 > 
+> # now let's make a box plot with individual points
+> # overlaid.  This requires a slightly different organization
+> # of the data
+> 
+> a <- as.numeric(Veh$value)
+> b <- c(as.numeric(DrugA$value) , rep(NA, nrow(Veh) - nrow(DrugA)))
+> c <- c(as.numeric(DrugB$value) , rep(NA, nrow(Veh) - nrow(DrugB)))
+> 
+> e <- data.frame(
++         vehicle=a,
++         drug_a =b,
++         drug_b =c
++                 )
+> 
+> boxplot(e)
+> stripchart(e, vertical=TRUE, add=TRUE, method="stack", col='blue', pch="o")
+> 
+> summary(e)
+    vehicle           drug_a            drug_b       
+ Min.   : 2.843   Min.   :  12.18   Min.   :  6.965  
+ 1st Qu.: 7.193   1st Qu.:  52.91   1st Qu.: 18.991  
+ Median : 9.634   Median : 128.26   Median : 41.912  
+ Mean   :10.186   Mean   : 236.98   Mean   : 49.243  
+ 3rd Qu.:13.050   3rd Qu.: 322.70   3rd Qu.: 69.783  
+ Max.   :21.968   Max.   :1237.00   Max.   :150.531  
+                  NA's   :59        NA's   :67       
+> 
+> 
+> 
 > # Close the PDF file of plots
 > dev.off()
 null device 
