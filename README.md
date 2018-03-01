@@ -8,6 +8,11 @@ Here's a simple example in R of how I handle the common situation when I have tw
 
 3. Extracting groups for boxplot purposes when, as is often the case, we have a different number of samples for each treatment (so the simplest way of setting up the data for boxplot purposes won't work).
 
+## The simulated data file is too big for Github.##
+You can get it from Google Drive here:
+https://drive.google.com/open?id=1EOb1dq-UkhBpyJyurjmg5skz9_qWf4lf
+
+
 
 Contents are:
 ````2018_03_01_12_12_24BoxPlotExampleCD274.pdf```` output plot
