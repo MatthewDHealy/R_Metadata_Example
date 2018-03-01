@@ -13,7 +13,6 @@ You can get it from Google Drive here:
 https://drive.google.com/open?id=1EOb1dq-UkhBpyJyurjmg5skz9_qWf4lf
 
 
-
 Contents are:
 ````2018_03_01_12_12_24BoxPlotExampleCD274.pdf```` output plot
 
